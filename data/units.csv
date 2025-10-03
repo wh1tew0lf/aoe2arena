@@ -1,0 +1,8 @@
+name,class,health,attack,melee_armor,ranged_armor,min_range,max_range,movement_speed,reload_time
+Militia,infantry,40,4,1,0,0,1,0.95,1.5
+Archer,archer,30,7,0,2,3,10,0.95,1.5
+Knight,cavalry,150,15,2,1,0,1,1.2,1.5
+Trebuchet,siege,250,60,1,1,5,15,0.7,3.0
+horse,cavalry,80,14,3,6,0,1,1,1
+Gusarbad,cavalry,95,9,0,4,0,1,1,1
+Gusar,cavalry,95,9,4,8,0,1,1,1
