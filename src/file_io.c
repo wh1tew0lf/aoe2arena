@@ -67,10 +67,10 @@ void load_units_from_csv(const char* filename) {
         if (token != NULL) units[unit_count].max_range = atoi(token);
         
         token = strtok(NULL, ",");
-        if (token != NULL) units[unit_count].movement_speed = atoi(token);
+        if (token != NULL) units[unit_count].movement_speed = atof(token);
         
         token = strtok(NULL, ",");
-        if (token != NULL) units[unit_count].reload_time = atoi(token);
+        if (token != NULL) units[unit_count].reload_time = atof(token);
         
         unit_count++;
     }
@@ -83,7 +83,7 @@ void load_units_from_csv(const char* filename) {
 void save_unit_to_csv(const char* filename, Unit* unit) {
     FILE* file = fopen(filename, "a");
     if (file != NULL) {
-        fprintf(file, "%s,%s,%d,%d,%d,%d,%d,%d,%d,%d\n",
+        fprintf(file, "%s,%s,%d,%d,%d,%d,%d,%d,%f,%f\n",
                 unit->name, unit_type_str(unit->type), unit->health, unit->attack,
                 unit->melee_armor, unit->ranged_armor, unit->min_range,
                 unit->max_range, unit->movement_speed, unit->reload_time);

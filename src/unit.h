@@ -21,8 +21,8 @@ typedef struct {
     int ranged_armor;
     int min_range;
     int max_range;
-    int movement_speed;
-    int reload_time;
+    float movement_speed;
+    float reload_time;
 } Unit;
 
 extern Unit units[MAX_UNITS];

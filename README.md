@@ -29,18 +29,6 @@ To run the application:
 make run
 ```
 
-To build with debug symbols:
-
-```bash
-make debug
-```
-
-To install to system path:
-
-```bash
-make install
-```
-
 ## Usage
 
 1. Run the program: `./aoe2arena`
